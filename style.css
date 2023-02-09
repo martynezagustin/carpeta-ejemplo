@@ -1,0 +1,155 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.body{
+    display: grid;
+    grid-template-rows: 40px auto 100px;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+.menu{
+    display: flex;
+    justify-content: space-around;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    color: black;
+    padding: 5px;
+}
+a:hover{
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    transition: .5s;
+    background-color: rgb(0, 0, 0);
+}
+a:active{
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    color: rgb(255, 255, 255);
+    background-color: rgb(101, 101, 101);
+}
+a:link{
+    text-decoration: underline;
+    font-family: sans-serif;
+    font-size: 1.4em;
+    color: rgb(255, 221, 49);
+}
+.header{
+    grid-area: header;
+    background-color: lightcoral;
+}
+/*primer y último hijo*/
+.padre-seccion{
+    background-color: lightseagreen;
+    font-size: 2em;
+    padding: 10px;
+}
+
+/*FIRST AND LAST CHILD*/
+.padre-seccion div:first-child{
+    padding: 10px;
+    background-color: brown;
+    font-weight: 700;
+    border: 1px solid green;
+    margin: 10px;
+}
+.padre-seccion div:last-child{
+    padding: 10px;
+    background: linear-gradient(180deg, lightgreen, lightcoral);
+    font-family: sans-serif;
+}
+.padre-seccion div:first-of-type{
+    background-color: burlywood;
+    color: red;
+}
+/*FIRST AND LAST TYPE*/
+.first-type h2:first-of-type{
+    background-color: #f12a1f;
+    color: white;
+    text-transform: uppercase;
+}
+.first-type h2:last-of-type{
+    background-color: yellow;
+    color: black;
+    font-family: sans-serif;
+}
+.first-type h2:nth-last-child(1){
+    background-color: aqua;
+    color: #f12a1f;
+    font-family: 'Courier New', Courier, monospace;
+}
+/*NTH-CHILD(N)*/
+.nth-hijo{
+    margin: 0 auto;
+    background-color: #f2f2ff;
+}
+/* .nth-hijo div:nth-child(odd){
+    background-color: lightpink;
+} */
+/*arranca a contar desde el último hacia arriba el nth-last-child*/
+.nth-hijo div:nth-last-child(even){
+    background-color: lightsalmon;
+    font-family: sans-serif;
+}
+
+.botoncitos button:nth-last-child(2){
+    background-color: yellow;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 600;
+    border-radius: 9px;
+    padding: 10px;
+}
+.botoncitos button:nth-last-of-type(2){
+    background-color: violet;
+    border-radius: 4px;
+    border: none;
+    color: black;
+}
+/* METODOLOGIA BEM */
+.contenedor{
+    max-width: 100%;
+}
+.tarjeta{
+    max-width: 50%;
+    border: 1px solid black;
+}
+.tarjeta__miniatura{
+    background-color: beige;
+}
+.tarjeta__imagen{
+    width: 80%;
+}
+.tarjeta__textos{
+    font-size: 1.5em;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+.tarjeta__titulo{
+    background-color: yellow;
+    color: #f12a1f;
+}
+.tarjeta__parrafo{
+    background-color: black;
+    color: white;
+}
+.boton{
+    background-color: tomato;
+    padding: 20px;
+    font-size: 1.4em;
+    font-weight: 600;
+}
+.boton-ver-mas{
+    color: blue;
+}

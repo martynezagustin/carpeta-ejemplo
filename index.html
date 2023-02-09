@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Práctica</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="body">
+    <header class="header">
+        <nav class="navbar">
+            <ul class="menu">
+                <li><a href="">Index</a></li>
+                <li><a href="./pag.html">Pag</a></li>
+                <li><a href="./ni-idea.html">NI IDEA</a></li>
+                <li><a href="">Enlace</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>MIS GRIDS</h1>
+        </section>
+        <!-- first and last child -->
+        <section class="padre-seccion">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+        </section>
+        <!-- first and last type -->
+        <section class="first-type">
+            <h2>Soy un h2</h2>
+            <h1>Soy un h1</h1>
+            <p>Soy un párrafo</p>
+            <h2>Soy otro h2</h2>
+        </section>
+        <!-- nth-child -->
+        <section class="nth-hijo">
+            <div>4</div>
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+        </section>
+
+        <div class="botoncitos">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, corporis?</p>
+            <button>Botoncito 1</button>
+            <button>Botoncito 2</button>
+            <button>Botoncito 3</button>
+            <button>Botoncito 4</button>
+        </div>
+
+        <!-- METODOLOGIA BEM -->
+        <section class="contenedor">
+            <!-- bloque 1 -->
+            <article class="tarjeta">
+                <a href="" class="tarjeta__miniatura">
+                    <img class="tarjeta__imagen" src="../../pre-entrega/SitioWeb/assets/imgs/logotype.png" alt="logotype">
+                </a>
+            </article>
+
+            <article class="tarjeta__textos">
+                <h3 class="tarjeta__titulo">
+                    <a class="tarjeta__enlace" href="#">Enlace</a>
+                </h3>
+                <p class="tarjeta__parrafo">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, magnam officiis quaerat quibusdam architecto aut tempore iste et hic cumque!</p>
+            </article>
+
+            <article>
+                <!-- Bloque 2 -->
+                <button class="boton boton-ver-mas">Ver Más</button>
+
+            </article>
+        </section>
+    </main>
+    <footer>
+        &copy; Ruso
+    </footer>
+</body>
+</html>
